@@ -1,0 +1,8 @@
+- name: Setup the architecture.
+  hosts: all
+  connection: local
+  become: true
+
+  roles:
+    - infrastructure
+    - sonarqube
